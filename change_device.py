@@ -1,8 +1,8 @@
 from genie.conf import Genie
 
 
-print("Rodando script que aplica uma mudança de configuração ao device 'edge-sw01'.")
-print("O device 'edge-sw01' está declarado no testbed-file.")
+print("Running script that applies a configuration change to device 'edge-sw01'.")
+print("The device 'edge-sw01' is defined in the testbed-file.")
 
 # Carrega o testebed com todos os devices
 testbed = Genie.init('multi-platform-network.yaml')
@@ -22,5 +22,5 @@ testbed.devices[device].configure(
 # Desconecta
 testbed.devices[device].disconnect()
 
-print("As mudanças foram aplicadas.")
-print("Agora podemos compará-las com as configurações antigas.")
+print("Changes applied.")
+print("We can now compare the current configuration against the previous one.")
